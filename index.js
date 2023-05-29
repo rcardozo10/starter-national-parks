@@ -28,12 +28,14 @@ for (let element of heading3List.values()) {
   console.log(element);
 }
 
-const divRating = document.querySelectorAll("div .rating-display") 
 
+//  using let of to array over object
+const divRating = document.querySelectorAll("div .rating-display") 
 for (let divRate of divRating.values()) {
     console.log(divRate);
 }
 
+//  using for loop to array over object
 const divArea = document.querySelectorAll("div .area-display")
 for (let i = 0; i < divArea.length; i++) {
     const divElement = divArea[i];
