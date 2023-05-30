@@ -1,3 +1,4 @@
+/*
 console.log(document);
 
 const heading = document.querySelector("h1");
@@ -21,8 +22,8 @@ console.log(hello);
 const buttons = document.querySelectorAll("button");
 console.log(buttons);
 
-const heading3List = document.querySelectorAll("h3");
 
+const heading3List = document.querySelectorAll("h3");
 // Iterate over the list and print each one
 for (let element of heading3List.values()) {
   console.log(element);
@@ -40,4 +41,29 @@ const divArea = document.querySelectorAll("div .area-display")
 for (let i = 0; i < divArea.length; i++) {
     const divElement = divArea[i];
     console.log(divElement);
+  }
+*/
+
+/*
+const descriptions = document.querySelectorAll(".description-display");
+for (let desc of descriptions.values()) {
+    let content = desc.innerText;
+    if(content.length > 250) {
+        content = content.slice(0, 250);
+        content = content + "...";
+    }
+    console.log(content);
+  }
+  */
+
+  const descriptions = document.querySelectorAll(".description-display");
+  for (let desc of descriptions.values()) {
+    let content = desc.innerText;
+  
+    if (content.length > 250) {
+      content = content.slice(0, 250);
+      content = content + "...";
+    }
+  
+    desc.innerText = content;
   }
