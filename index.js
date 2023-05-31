@@ -135,7 +135,7 @@ nameSorter.addEventListener("click", (event) => {
 
   nameSorter.addEventListener("click", (event) => {
     event.preventDefault();
-  /*
+  
     // 1.  Get the main element
     const main = document.querySelector("main");
   
@@ -167,8 +167,8 @@ parksArray.sort((parkA, parkB) => {
     main.appendChild(park);
   });
 
-  */
 
+/*
   // Function for sorting by name
 const sortByName = (parkA, parkB) => {
     const parkAName = parkA.querySelector("h2").innerText;
@@ -221,3 +221,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
 
+*/
